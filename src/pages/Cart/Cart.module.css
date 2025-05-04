@@ -1,0 +1,76 @@
+.cartPage {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.cartList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cartItem {
+  background: white;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.checkoutBtn {
+  background: linear-gradient(to right, var(--primary), var(--accent));
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: var(--transition);
+  width: 100%;
+  margin-top: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.checkoutBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pageTitle {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.emptyCartMessage {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: white;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.notification.success {
+  background-color: #28a745;
+}
+
+.notification.error {
+  background-color: #dc3545;
+}
+
+.notification.info {
+  background-color: #17a2b8;
+}

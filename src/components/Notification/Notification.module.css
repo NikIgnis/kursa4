@@ -1,0 +1,37 @@
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: white;
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    animation: slideInRight 0.3s ease-out;
+  }
+  
+  .notification.success {
+    background-color: #28a745;
+  }
+  
+  .notification.error {
+    background-color: #dc3545;
+  }
+  
+  .notification.info {
+    background-color: #007bff;
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }

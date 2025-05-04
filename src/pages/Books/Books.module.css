@@ -1,0 +1,97 @@
+.booksPage {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.pageTitle {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-family: var(--font-heading);
+  color: var(--dark);
+  font-size: 2.5rem;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pageTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, var(--primary), var(--accent));
+  border-radius: 2px;
+}
+
+.filters {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+  background: white;
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.filterGroup {
+  flex: 1;
+  min-width: 200px;
+}
+
+.filterGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--dark);
+  font-family: var(--font-heading);
+}
+
+.filterGroup select {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 2px solid #e9ecef;
+  border-radius: var(--border-radius);
+  font-family: var(--font-main);
+  transition: var(--transition);
+}
+
+.filterGroup select:focus {
+  border-color: var(--primary);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.2);
+}
+
+.booksGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+.searchBar {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.searchInput {
+  width: 100%;
+  max-width: 600px;
+  padding: 0.8rem 1.2rem;
+  border: 2px solid #e9ecef;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.2);
+}

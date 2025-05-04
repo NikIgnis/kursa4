@@ -1,0 +1,42 @@
+.header {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  box-shadow: var(--box-shadow);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  animation: fadeIn 0.6s ease-out;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: var(--transition);
+}
+
+.logoContainer:hover {
+  transform: scale(1.02);
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.logoContainer h1 {
+  color: white;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
